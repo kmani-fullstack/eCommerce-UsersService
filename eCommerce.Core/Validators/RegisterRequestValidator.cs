@@ -18,7 +18,7 @@ public class RegisterRequestValidator : AbstractValidator<RegisterRequest>
         RuleFor(x => x.Gender).IsInEnum().WithMessage("Gender is invalid.");
             
          RuleFor(x=>x.PersonName)
-             .NotEmpty().WithMessage("Name is required.")
-             .Length(6,100).WithMessage("Name must be between 6 and 100 characters.");
+             .NotEmpty().WithMessage("Person Name is required.")
+             .Length(6,100).WithMessage("Person Name must be between 6 and 100 characters.");
     }
 }
